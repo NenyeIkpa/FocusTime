@@ -62,7 +62,7 @@ const onEnd = (reset) => {
     {isStarted && <RoundedButton style={styles.button} title='pause' onPress={()=> {setIsStarted(false)}}/>}
     </View>
     <View  style={styles.clearSubjectWrapper}>
-    <RoundedButton size={50} title='-' onPress={clearSubject} />
+    <RoundedButton size={50} title='-' onPress={() => clearSubject()} />
     </View>
   </View>
   )}
